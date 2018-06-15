@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% load bootstrap3 %}
+{% load static %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+{% block bootstrap3_title %} mvWiFi | Plans {% endblock %}
+{% block mvwifi_active_plans %}active{% endblock %}
+
+{% block bootstrap3_content %}
+
+<!-- Main component for a primary marketing message or call to action -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>Internet Service Plans as of 03/20/2018</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="long-text-font">
+                    <h4>Wireless (WiFi) Signal</h4>
+                    <p>For dependable service you need us to install equipment at your location (see below). Some locations may be near a very strong access point (AP) and may be to obtain roaming service without additional equipment. If you want to sign up for roaming service and do not have equipment installed at your location, check your signal level prior to signing up for an account. Instructions on how to do this are located here.</p>
+
+                    <h4>Roaming Service</h4>
+                    <p>Roaming plans allow you to connect anywhere that you can receive one of our access point with an open SSID starting with Chappy WISP. Roaming plans require each user to log in with a Username and Password each time they go online. They cannot be used for devices that require direct access (no web browser). Roaming is limited to 03mb/s plans. We are phasing this out in favor of fixed service.</p>
+
+                    <h4>Fixed Service</h4>
+                    <p>Fixed service is limited to a specific location, much like cable or DSL. The SSID will be secure (locked) and start with mvWiFi-. Once you connect a device to that access point and enter the security key you will never have to do it for that device again. There is no further log in required. You need a two-piece installation (indoor and outdoor) for fixed service. All plans are available up to 50mb/s. Fixed service is required for customers with phone service, cell extenders, streaming devices, solar panel reporting, etc. Service plans with speeds of 20 mb/s or above can be used with multiple locations connected together as one account.</p>
+
+                    <h4>Discount Services</h4>
+                    <p>We offer a 10% senior discount on all annual plans for residents 65 years or older. We provide free Basic Internet to any year round household with school age children. We allow split service either as a single dwelling (annual service as 6-month Basic/6 month Family) or muliple dwellings (annual service split as 6-Month to two dwellings). Some fees may apply. Monthly payment on annual plans are available for those on a limited budget. For more information on Discount Services use our secure Contact Us form.</p>
+
+                    <h4>Installation</h4>
+                    <p>Equipment installation must be scheduled and although you do not need to be present, we will need access to the inside of your home. Installation costs are a one-time charge ranging from $149 to $499 depending on the plan selected and location (most 2-unit installs average $299). We perform a free site survey and quote your install cost without any commitment. If your location requires more access points installed inside after the initial installation for greater wireless coverage, they can be installed at any time for $129 each. There are no monthly rental fees, we only charge for installation and removal. All installations are subject to our End User License Agreement (EULA).</p>
+                    <p>There is no charge for the equipment as we maintain ownership of it. We monitor all equipment to make sure it is functioning correctly. Accounts that have our equipment installed and are less than annual are subject to a re-programming charge if powered down for longer than 30 days.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-default" style="margin-top: 20px;">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Roaming Plans Without Registration</div>
+
+                    <!-- Table -->
+                    <table class="table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Max Speed</th>
+                                    <th>1 Day</th>
+                                    <th>1 Week</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>3mb/s</td>
+                                    <td>$12.00</td>
+                                    <td>$32.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </table>
+                </div>
+            <div class="panel panel-default" style="margin-top: 20px;">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Internet Plans (Requires Registration<sup>1</sup>)</div>
+
+                    <!-- Table -->
+                    <table class="table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Plan</th>
+                                    <th>Avg Speed</th>
+                                    <th>1 Week</th>
+                                    <th>1 Month</th>
+                                    <th>6 Month</th>
+                                    <th>12 Month</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Basic</td>
+                                    <td>03 mb/s</td>
+                                    <td>$32.00</td>
+                                    <td>$61.00</td>
+                                    <td></td>
+                                    <td>$429.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Streaming</td>
+                                    <td>08 mb/s</td>
+                                    <td></td>
+                                    <td>$81.00</td>
+                                    <td>$449.00</td>
+                                    <td>$729.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Family</td>
+                                    <td>12 mb/s</td>
+                                    <td></td>
+                                    <td>$119.00</td>
+                                    <td>$659.00</td>
+                                    <td>$999.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Business</td>
+                                    <td>20 mb/s</td>
+                                    <td></td>
+                                    <td>$159.00</td>
+                                    <td>$829.00</td>
+                                    <td>$1,499.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Commercial<sup>3</sup></td>
+                                    <td>Unlimited</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>$2,699.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </table>
+                <div class="panel-footer">
+                    <p>Local access point are required to obtain full speed for plan. All plans may not be available in all areas. Prices subject to change without notice.</p>
+                    <p><sup>1</sup>Registration &mdash; Signing up for service from our website is a two-step process. You must create your account, then log back into it and pay for your service before it will be active. If you need help just Contact Us.</p>
+                    <p><sup>3</sup>High Bandwidth Plans &mdash; These plans may require installation costs above the standard rates and may require a multi-year committment. For a custom quote Contact Us.</p>
+                </div>
+            </div>
+                <div class="long-text-font">
+                    <h4 style="padding-top: 20px;">Changing Plans or Service Type</h4>
+                    <p>A customer may move up to a higher level of service at any point on any plan by paying the pro-rated difference in the cost of plans. A customer may only down-grade to a lower plan on or after the date their existing plan expires.</p>
+                    <p>Changing the type of service to a location (roaming to fixed) may require additional equipment and the change in plans must be done by us. In order to switch your service type you must contact us by using our secure Contact Us form. Once the account is converted you can manage it and renew it online, but the initial setup must be done by us.</p>
+
+                    <h4>Free Service</h4>
+                    <p>Free fixed service is available for any home on Chappy that has a school aged child living there year round regardless if in a public school or if home schooled. Installation charges may still apply. Free service is available to the general public at the Chappy store, IBWS golf course, Chappy fire station, Chappy Community Center, and any TTOR gatehouse.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
