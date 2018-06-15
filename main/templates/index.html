@@ -8,18 +8,25 @@
 {% block bootstrap3_content %}
 
 <!-- Main component for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <h1>A new tower is coming</h1>
-    <div class="row">
-        <div class="col-md-3">
-            <img width="100%" src="{% static 'img/cell-tower.jpg' %}" />
-        </div>
-        <div class="col-md-9">
-            <p>The Town and residents have been trying to solve the shortage of modern technology and communication on Chappy for over 7 years. There have been three committees and various false starts. In 2008 I started Chappy WISP to bring high speed Internet to all of Chappy. In 2015 Comcast wired Chappy and in 2016 we got the temporary cell tower from AT&T. This is the final step towards that goal.</p>
+<div class="row">
+    <div class="col-md-9">
+        <div class="jumbotron">
+            <h1>A new tower is coming</h1>
+            <div class="row">
+                <div class="col-md-9">
+                    <p>The Town and residents have been trying to solve the shortage of modern technology and communication on Chappy for over 7 years. There have been three committees and various false starts. In 2008 I started Chappy WISP to bring high speed Internet to all of Chappy. In 2015 Comcast wired Chappy and in 2016 we got the temporary cell tower from AT&T. This is the final step towards that goal.</p>
+                </div>
+                <div class="col-md-3 vcenter">
+                    <img width="100%" src="{% static 'img/cell-phone.jpg' %}" />
+                </div>
+            </div>
+            <p style="padding-top: 20px;">
+                <a class="btn btn-lg btn-primary" href="https://www.mvwifi.com/documents/Tower%20Q&A.pdf" role="button">View full docs »</a>
+            </p>
         </div>
     </div>
-    <p style="padding-top: 20px;">
-        <a class="btn btn-lg btn-primary" href="https://www.mvwifi.com/documents/Tower%20Q&A.pdf" role="button">View full docs »</a>
-    </p>
+    <div class="col-md-3">
+        <a class="twitter-timeline" data-height="500" href="https://twitter.com/mvWiFi?ref_src=twsrc%5Etfw">Tweets by mvWiFi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
 </div>
 {% endblock %}
