@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load bootstrap3 %}
+{% load static %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+{% block bootstrap3_title %} mvWiFi | About {% endblock %}
+{% block mvwifi_active_about %}active{% endblock %}
+
+{% block bootstrap3_content %}
+
+<!-- Main component for a primary marketing message or call to action -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>Chappaquiddick Wireless Internet Service Provider</h1>
+        </div>
+        <div class="long-text-font">
+            <p style="padding-top: 20px; padding-bottom: 20px;">Chappy WISP (mvWiFi, llc) is a “last mile provider” for Internet and related services and started commercial operation June 1, 2009 after a year of testing. We operate under the Telecommunication Act of 1996, with the goal of providing high-speed Internet service to the entire island of Chappaquiddick and surrounding harbors. We own and operate the only tower on the island of Chappaquiddick. From our 85’ tower we receive bandwidth from the Vineyard as well as two feeds from a fiber line in Falmouth. After going through our secure servers we transmit to our customer’s locations via six sector arrays and four dedicated relay feeds.</p>
+
+
+            <p>You can download our PDF brochure that gives you the history of the company and founder by clicking <a href="https://www.mvwifi.com/documents/mvwifi_trifold.pdf">here</a>, or on the brochure cover below. We are happy to mail you one on request</p>
+            <a href="https://www.mvwifi.com/documents/mvwifi_trifold.pdf"><img width="50%" style="margin-top: 20px;" class="img-responsive center-block" src="{% static 'img/mvwifi_cover.jpg' %}" /></a>
+        </div>
+    </div>
+</div>
+{% endblock %}
