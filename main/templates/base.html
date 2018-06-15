@@ -51,23 +51,23 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li class="{% block mvwifi_active_home %}{% endblock %}"><a href="#">Home</a></li>
+              <li class="{% block mvwifi_active_about %}{% endblock %}"><a href="#">About</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Customer <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Internet plans</a></li>
+                  <li class="{% block mvwifi_active_plans %}{% endblock %}"><a href="#">Internet plans</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="#">Create account</a></li>
-                  <li><a href="#">Manage | Pay account</a></li>
+                  <li class="{% block mvwifi_active_new_acct %}{% endblock %}"><a href="#">Create account</a></li>
+                  <li class="{% block mvwifi_active_mng_acct %}{% endblock %}"><a href="#">Manage | Pay account</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Quick accounts</li>
-                  <li><a href="#">24hr account ($12.00)</a></li>
-                  <li><a href="#">7day account ($32.00)</a></li>
+                  <li class="{% block mvwifi_active_24hr %}{% endblock %}"><a href="#">24hr account ($12.00)</a></li>
+                  <li class="{% block mvwifi_active_7day %}{% endblock %}"><a href="#">7day account ($32.00)</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Customer information</li>
-                  <li><a href="#">End User License Agreement (EULA)</a></li>
-                  <li><a href="#">Acceptable User Policy</a></li>
+                  <li class="{% block mvwifi_active_eula %}{% endblock %}"><a href="#">End User License Agreement (EULA)</a></li>
+                  <li class="{% block mvwifi_active_aup %}{% endblock %}"><a href="#">Acceptable User Policy</a></li>
                 </ul>
               </li>
               <li><a href="#">Contact us </a></li>

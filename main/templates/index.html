@@ -4,10 +4,19 @@
 {% load static %}
 
 {% block bootstrap3_title %} mvWiFi | Home {% endblock %}
+{% block mvwifi_active_home %}active{% endblock %}
 
 {% block bootstrap3_content %}
 
 <!-- Main component for a primary marketing message or call to action -->
+<div class="alert alert-info alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <ul>
+        <li><strong><em>Please read all requirements</em></strong></li>
+        <li>No limits on number of users or caps on bandwidth</li>
+        <li><strong>Unlimited</strong> speed for all annual plans from 12:00am &dash; 12:00pm</li>
+    </ul>
+</div>
 <div class="row">
     <div class="col-md-9">
         <div class="jumbotron">
