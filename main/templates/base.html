@@ -56,6 +56,10 @@
               <li class="dropdown-header">Quick accounts</li>
               <li><a href="#">24hr account ($12.00)</a></li>
               <li><a href="#">7day account ($32.00)</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Customer information</li>
+              <li><a href="#">End User License Agreement (EULA)</a></li>
+              <li><a href="#">Acceptable User Policy</a></li>
             </ul>
           </li>
           <li><a href="#">Contact us </a></li>
@@ -66,10 +70,11 @@
       </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
     </nav>
-{% block bootstrap3_content %}django-bootstrap3 template content{% endblock %}
+{% block bootstrap3_content %}{% endblock %}
 {% if not 'javascript_in_head'|bootstrap_setting %}{% bootstrap_javascript jquery=True %}{% endif %}
 {% block bootstrap3_extra_script %}{% endblock %}
 </div>
+{% block mvwifi_jumbotron %}{% endblock %}
 </body>
 
 </html>
