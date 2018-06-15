@@ -57,7 +57,7 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Customer <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li class="{% block mvwifi_active_plans %}{% endblock %}"><a href="#">Internet plans</a></li>
+                  <li class="{% block mvwifi_active_plans %}{% endblock %}"><a href="{% url 'plans' %}">Internet plans</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="{% block mvwifi_active_new_acct %}{% endblock %}"><a href="#">Create account</a></li>
                   <li class="{% block mvwifi_active_mng_acct %}{% endblock %}"><a href="#">Manage | Pay account</a></li>
