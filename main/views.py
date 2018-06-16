@@ -10,3 +10,9 @@ def about(request):
 
 def plans(request):
     return render(request, 'plans.html')
+
+def eula(request):
+    return render(request, 'eula.html')
+    
+def aup(request):
+    return render(request, 'aup.html')

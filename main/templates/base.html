@@ -59,16 +59,16 @@
                 <ul class="dropdown-menu">
                   <li class="{% block mvwifi_active_plans %}{% endblock %}"><a href="{% url 'plans' %}">Internet plans</a></li>
                   <li role="separator" class="divider"></li>
-                  <li class="{% block mvwifi_active_new_acct %}{% endblock %}"><a href="#">Create account</a></li>
-                  <li class="{% block mvwifi_active_mng_acct %}{% endblock %}"><a href="#">Manage | Pay account</a></li>
+                  <li class="{% block mvwifi_active_new_acct %}{% endblock %} disabled"><a href="#">Create account</a></li>
+                  <li class="{% block mvwifi_active_mng_acct %}{% endblock %} disabled"><a href="#">Manage | Pay account</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Quick accounts</li>
-                  <li class="{% block mvwifi_active_24hr %}{% endblock %}"><a href="#">24hr account ($12.00)</a></li>
-                  <li class="{% block mvwifi_active_7day %}{% endblock %}"><a href="#">7day account ($32.00)</a></li>
+                  <li class="{% block mvwifi_active_24hr %}{% endblock %} disabled"><a href="#">24hr account ($12.00)</a></li>
+                  <li class="{% block mvwifi_active_7day %}{% endblock %} disabled"><a href="#">7day account ($32.00)</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Customer information</li>
-                  <li class="{% block mvwifi_active_eula %}{% endblock %}"><a href="#">End User License Agreement (EULA)</a></li>
-                  <li class="{% block mvwifi_active_aup %}{% endblock %}"><a href="#">Acceptable User Policy</a></li>
+                  <li class="{% block mvwifi_active_eula %}{% endblock %}"><a href="{% url 'eula' %}">End User License Agreement (EULA)</a></li>
+                  <li class="{% block mvwifi_active_aup %}{% endblock %}"><a href="{% url 'aup' %}">Acceptable User Policy</a></li>
                 </ul>
               </li>
               <li><a href="#">Contact us </a></li>
