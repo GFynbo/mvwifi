@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load bootstrap3 %}
+{% load static %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block bootstrap3_title %} mvWiFi | AUP {% endblock %}
+{% block mvwifi_active_aup %}active{% endblock %}
+
+{% block bootstrap3_content %}
+
+<script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6LeJxxgTAAAAAE6BlhpHekHuq__SHDnLoCHdWzN7'
+        });
+      };
+</script>
+
+<!-- Main component for a primary marketing message or call to action -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    {% bootstrap_messages %}
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    <div id="html_element"></div>
+                    <br>
+                    <div class="form-actions">
+                      {% bootstrap_button "Submit" button_type="submit" button_class="btn-primary" icon="send" %}
+                    </div>
+                </form>
+                <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

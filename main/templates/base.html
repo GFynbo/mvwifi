@@ -5,10 +5,7 @@
 {# Load CSS and JavaScript #}
 {% bootstrap_css %}
 {% bootstrap_javascript %}
-{% bootstrap_messages %}
 
-{# Display django.contrib.messages as Bootstrap alerts #}
-{% bootstrap_messages %}
 
 <!DOCTYPE html>
 <html{% if LANGUAGE_CODE %} lang="{{ LANGUAGE_CODE }}"{% endif %}>
@@ -31,10 +28,6 @@
 </head>
 
 <body>
-    <div class="alert alert-danger alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <strong>Warning!</strong> This website is under construction. Features and links may not work or may not be functional.<a href="https://mvwifi.com" class="alert-link"> Click here to return to mvwifi.com.</a>
-    </div>
     <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
         <!-- Static navbar -->
         <nav class="navbar navbar-default">
@@ -47,7 +40,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{% url 'index' %}">
-                <img alt="mvWiFi" height="100%" src="{% static 'img/WISP_Logo.gif' %}">
+                <img alt="mvWiFi" src="{% static 'img/WISP_Logo.gif' %}">
             </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
@@ -68,13 +61,13 @@
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Customer information</li>
                   <li class="{% block mvwifi_active_eula %}{% endblock %}"><a href="{% url 'eula' %}">End User License Agreement (EULA)</a></li>
-                  <li class="{% block mvwifi_active_aup %}{% endblock %}"><a href="{% url 'aup' %}">Acceptable User Policy</a></li>
+                  <li class="{% block mvwifi_active_aup %}{% endblock %}"><a href="{% url 'aup' %}">Acceptable Use Policy</a></li>
                 </ul>
               </li>
               <li><a href="#">Contact us </a></li>
             </ul>
             <form class="navbar-form navbar-right">
-                <button type="submit" class="btn btn-default">Sign in</button>
+                <button type="submit" class="btn btn-success">Sign in</button>
             </form>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->

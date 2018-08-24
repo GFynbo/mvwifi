@@ -28,6 +28,11 @@ Temporary Items
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*.swp
+*.env
+mvwifi/bin/*
+mvwifi/include/*
+*.*~
 
 # C extensions
 *.so

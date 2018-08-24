@@ -9,6 +9,10 @@
 {% block bootstrap3_content %}
 
 <!-- Main component for a primary marketing message or call to action -->
+<div class="alert alert-danger alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Warning!</strong> This website is under construction. Features and links may not work or may not be functional.<a href="https://mvwifi.com" class="alert-link"> Click here to return to mvwifi.com.</a>
+</div>
 <div class="alert alert-info alert-dismissible" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <ul>
@@ -23,7 +27,13 @@
             <h1>A new tower is coming</h1>
             <div class="row">
                 <div class="col-md-9">
-                    <p>The Town and residents have been trying to solve the shortage of modern technology and communication on Chappy for over 7 years. There have been three committees and various false starts. In 2008 I started Chappy WISP to bring high speed Internet to all of Chappy. In 2015 Comcast wired Chappy and in 2016 we got the temporary cell tower from AT&T. This is the final step towards that goal.</p>
+                    <p>The Town and residents have been trying to solve the
+                    shortage of modern technology and communication on Chappy
+                    for over 7 years. There have been three committees and
+                    various false starts. In 2008 I started Chappy WISP to
+                    bring high speed Internet to all of Chappy. In 2015 Comcast
+                    wired Chappy and in 2016 we got the temporary cell tower
+                    from AT&amp;T. This is the final step towards that goal.</p>
                 </div>
                 <div class="col-md-3 vcenter">
                     <img width="100%" src="{% static 'img/cell-phone.jpg' %}" />
@@ -33,9 +43,29 @@
                 <a class="btn btn-lg btn-primary" href="https://www.mvwifi.com/documents/Tower%20Q&A.pdf" role="button">View full docs »</a>
             </p>
         </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">What's this? A new webite?</h3>
+          </div>
+          <div class="panel-body">
+            <p>Whoa! What's this new, fancy&dash;looking website?</p>
+            <p>Well, I'm glad you asked because this is the same mvWiFi 
+            that you know and love, but with our fresh and
+            clean haircut. You will find the same feature you had before,
+            however now they are polished and easier than ever to use.
+            </p>
+            <p>Be sure to checkout all the features &mdash; from easier menus
+            and mobile friendly pages, to new payment pages &mdash; to get
+            a feel for the new site. We want it to be as easy as possible to
+            manage your internet.</p>
+            <p>If you have any questions or concerns about the new site please
+            feel free to reach out to us through the 'Contact Us' page with
+            your feedback/questions.</p>
+          </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <a class="twitter-timeline" data-height="500" href="https://twitter.com/mvWiFi?ref_src=twsrc%5Etfw">Tweets by mvWiFi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-height="100%" href="https://twitter.com/mvWiFi?ref_src=twsrc%5Etfw">Tweets by mvWiFi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 </div>
 {% endblock %}
